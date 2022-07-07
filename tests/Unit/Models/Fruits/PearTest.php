@@ -3,6 +3,7 @@
 namespace Unit\Models\Fruits;
 
 use App\Factories\Fruits\PearFactory;
+use App\Models\Fruits\Pear;
 use PHPUnit\Framework\TestCase;
 
 class PearTest extends TestCase
@@ -13,7 +14,7 @@ class PearTest extends TestCase
         $pear = PearFactory::createOne();
         $weight = $pear->weight();
         $this->assertIsInt($weight);
-        $this->assertGreaterThanOrEqual(130, $weight);
-        $this->assertLessThanOrEqual(170, $weight);
+        $this->assertGreaterThanOrEqual(Pear::PEAR_MIN_WEIGHT, $weight);
+        $this->assertLessThanOrEqual(Pear::PEAR_MAX_WEIGHT, $weight);
     }
 }

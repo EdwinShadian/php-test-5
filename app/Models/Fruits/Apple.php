@@ -6,6 +6,9 @@ use App\Models\Interfaces\FruitInterface;
 
 class Apple implements FruitInterface
 {
+    public const APPLE_MIN_WEIGHT = 150;
+    public const APPLE_MAX_WEIGHT = 180;
+
     private int $weight;
 
     /**

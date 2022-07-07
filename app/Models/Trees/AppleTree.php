@@ -7,6 +7,9 @@ use App\Models\Interfaces\TreeInterface;
 
 class AppleTree implements TreeInterface
 {
+    public const MIN_APPLES_COUNT = 40;
+    public const MAX_APPLES_COUNT = 50;
+
     private array $apples;
     private int $applesCount;
 

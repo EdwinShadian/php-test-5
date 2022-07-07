@@ -12,7 +12,7 @@ class AppleFactory implements AbstractFactory
      */
     public static function createOne()
     {
-        $weight = rand(150, 180);
+        $weight = rand(Apple::APPLE_MIN_WEIGHT, Apple::APPLE_MAX_WEIGHT);
 
         return new Apple($weight);
     }

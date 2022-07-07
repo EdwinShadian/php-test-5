@@ -12,7 +12,7 @@ class AppleTreeFactory implements AbstractFactory
      */
     public static function createOne()
     {
-        $apples = rand(40, 50);
+        $apples = rand(AppleTree::MIN_APPLES_COUNT, AppleTree::MAX_APPLES_COUNT);
 
         return new AppleTree($apples);
     }

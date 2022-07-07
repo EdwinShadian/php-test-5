@@ -7,6 +7,9 @@ use App\Models\Interfaces\TreeInterface;
 
 class PearTree implements TreeInterface
 {
+    public const MIN_PEARS_COUNT = 0;
+    public const MAX_PEARS_COUNT = 20;
+
     private array $pears;
     private int $pearsCount;
 

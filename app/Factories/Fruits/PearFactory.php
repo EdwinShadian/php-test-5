@@ -12,7 +12,7 @@ class PearFactory implements AbstractFactory
      */
     public static function createOne()
     {
-        $weight = rand(130, 170);
+        $weight = rand(Pear::PEAR_MIN_WEIGHT, Pear::PEAR_MAX_WEIGHT);
 
         return new Pear($weight);
     }

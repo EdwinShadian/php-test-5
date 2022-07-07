@@ -12,7 +12,7 @@ class PearTreeFactory implements AbstractFactory
      */
     public static function createOne()
     {
-        $pears = rand(0, 20);
+        $pears = rand(PearTree::MIN_PEARS_COUNT, PearTree::MAX_PEARS_COUNT);
 
         return new PearTree($pears);
     }

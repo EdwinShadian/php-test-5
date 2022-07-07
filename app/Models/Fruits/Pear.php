@@ -6,6 +6,9 @@ use App\Models\Interfaces\FruitInterface;
 
 class Pear implements FruitInterface
 {
+    public const PEAR_MIN_WEIGHT = 130;
+    public const PEAR_MAX_WEIGHT = 170;
+
     private int $weight;
 
     /**
