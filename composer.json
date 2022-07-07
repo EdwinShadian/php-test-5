@@ -1,0 +1,28 @@
+{
+  "name": "vendor_name/php-test-5",
+  "description": "description",
+  "license": "MIT",
+  "require": {
+    "ext-json": "*",
+    "phpunit/phpunit": "^9.5.21"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\" : "app",
+      "App\\Factories\\": "app/Factories",
+      "App\\Factories\\Fruits\\": "app/Factories/Fruits",
+      "App\\Factories\\Trees\\": "app/Factories/Trees",
+      "App\\Models\\": "app/Models",
+      "App\\Models\\Fruits\\": "app/Models/Fruits",
+      "App\\Models\\Interfaces\\": "app/Models/Interfaces",
+      "App\\Models\\Trees\\": "app/Models/Trees"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/",
+      "Tests\\Unit\\": "tests/Unit",
+      "Tests\\Unit\\Factories\\": "tests/Unit/Factories"
+    }
+  }
+}
